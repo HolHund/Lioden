@@ -162,8 +162,13 @@ font-family: 'Orbitron', sans-serif !important;
 }
 
 .navbar-default .navbar-nav > li > a {
-color: #000;
-font-family: 'Orbitron', sans-serif !important;
+line-height: 50px; /* Регулируй под высоту розовой панели */
+height: 50px;
+padding-top: 0;
+padding-bottom: 0;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .navbar-default .navbar-nav li a:hover {
