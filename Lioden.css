@@ -1,3 +1,6 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
 div.box1 {
 background:#FFD4E7;
 text-align:center;
@@ -5,7 +8,7 @@ color:black;
 width:700px;
 height:60px;
 border:1px dashed black;
- transition:all ease 2s;
+transition:all ease 2s;
 border-radius:5px;
 overflow:hidden;
 }
@@ -14,7 +17,7 @@ overflow:hidden;
 background:#FFD4E7;
 text-align:center;
 color:black;
-width:700;
+width:700px;
 height:255px;
 border:1px dashed black;
 transition:all ease 2s;
@@ -29,7 +32,7 @@ color:black;
 width:700px;
 height:60px;
 border:1px dashed black;
- transition:all ease 2s;
+transition:all ease 2s;
 border-radius:5px;
 overflow:hidden;
 }
@@ -53,7 +56,7 @@ color:black;
 width:700px;
 height:60px;
 border:1px dashed black;
- transition:all ease 2s;
+transition:all ease 2s;
 border-radius:5px;
 overflow:hidden;
 }
@@ -85,14 +88,20 @@ overflow:auto;
 }
 
 
-body {background: url("https://i.imgur.com/I9irKri.jpeg") fixed;background-repeat: no-repeat;background-size: cover;color: #000;}
+body {
+background: url("https://i.imgur.com/I9irKri.jpeg") fixed;
+background-repeat: no-repeat;
+background-size: cover;
+color: #000;
+font-family: 'Orbitron', sans-serif;
+}
 
 .welcomeback, .white, .bottomlinks li a:hover, .bottomlinks li a {
 color: #000;
 }
 
 h1, h3 , .sidebar h3 {
-font-family: "Delius Swash Caps", Arial !important;
+font-family: 'Orbitron', sans-serif !important;
 text-align: left;
 color: #000;
 border-bottom: 1px solid #000;
@@ -107,178 +116,171 @@ text-shadow: none;
 font-weight: bold;
 font-size: 14px;
 border-radius: 5px;
-font-family: "Delius Swash Caps", Arial !important;
+font-family: 'Orbitron', sans-serif !important;
 }
- 
- 
+
 /* LINKS */
- 
 .table a:link, .table a:active, .table a:visited, .right a:link, .right a:active, .right a:visited, .bottom a:link, .bottom a:active, .bottom a:visited, .topbar a:link, .topbar a:visited, .topbar a:active, a:link, a:visited, a:active {
 color: #000000;
-font-family: "Delius Swash Caps", Arial !important;
+font-family: 'Orbitron', sans-serif !important;
 }
- 
+
 .table .top a:link, .table .top a:active, .table .top a:visited, .table th a:link, .table th a:active, .table th a:visited {
 border-bottom: 1px solid #000000;
 color: #000000;
-font-family: "Delius Swash Caps", Arial !important;
+font-family: 'Orbitron', sans-serif !important;
 }
- 
+
 /* TOPBAR */
- 
 .topbar {
 background: #FFD4E7;
 border: 1px dashed #000;
 border-bottom-left-radius: 10px;
 border-bottom-right-radius: 10px;
-font-family: "Delius Swash Caps", Arial !important;
+font-family: 'Orbitron', sans-serif !important;
 }
 
 .badge {
 background: #FFD4E7;
 border: 1px solid #000;
-font-family: "Delius Swash Caps", Arial !important;
+font-family: 'Orbitron', sans-serif !important;
 }
- 
+
 /* NAVBAR */
- 
 .main {
 background: rgba(255, 212, 231, 0.21);
 border: 1px dashed #000;
 box-shadow: none;
-font-family: "Delius Swash Caps", Arial !important;
+font-family: 'Orbitron', sans-serif !important;
 }
- 
+
 .navbar {
 background: #FFD4E7;
 border-bottom: 1px dashed #000;
 color: #000;
-font-family: "Delius Swash Caps", Arial !important;
+font-family: 'Orbitron', sans-serif !important;
 }
- 
+
 .navbar-default .navbar-nav > li > a {
 color: #000;
-font-family: "Delius Swash Caps", Arial !important;
+font-family: 'Orbitron', sans-serif !important;
 }
- 
+
 .navbar-default .navbar-nav li a:hover {
 color: #000;
 background: #B5A5CD;
 border-left: 1px dashed #000;
 border-right: 1px dashed #000;
-font-family: "Delius Swash Caps", Arial !important;
-} 
- 
- 
- 
+font-family: 'Orbitron', sans-serif !important;
+}
+
 /* SIDEBAR */
- 
 .sidebar {
 background: rgba(255, 212, 231, 0.21);
 border: 0px dashed #000;
 border-bottom: 1px dashed #000;
 border-left: 1px dashed #000;
 color: #000;
-font-family: "Delius Swash Caps", Arial !important;
+font-family: 'Orbitron', sans-serif !important;
 }
- 
+
 .col-md-3 .panel {
 background: #FFD4E7;
 border: 1px dashed #000;
 box-shadow: none;  
-font-family: "Delius Swash Caps", Arial !important;
+font-family: 'Orbitron', sans-serif !important;
 }
- 
+
 .progress-bar {
 background: #B5A5CD;
-font-family: "Delius Swash Caps", Arial !important;
+font-family: 'Orbitron', sans-serif !important;
 }
- 
+
 .progress {
 background: #FFEAED;
 border: 1px solid #000;
-font-family: "Delius Swash Caps", Arial !important;
+font-family: 'Orbitron', sans-serif !important;
 }
+
 /* text on progress bars */
-.progress div {color: #000;}
- 
+.progress div {
+color: #000;
+}
+
 /* CHAT */
- 
 .chat_light, .chat_dark {
 background: #FFD4E7;
 font-size: 11px;
 color: #000;
-font-family: "Delius Swash Caps", Arial !important;
+font-family: 'Orbitron', sans-serif !important;
 }
 
 .chatContainer {
 border: 1px dashed #000;
-font-family: "Delius Swash Caps", Arial !important;
+font-family: 'Orbitron', sans-serif !important;
 }
- 
+
 .userstolen {
 background: none;
-font-family: "Delius Swash Caps", Arial !important;
+font-family: 'Orbitron', sans-serif !important;
 }
 
 .alert-danger {
 color: #000000;
 background: #B5A5CD;
 border: 1px dashed #000;
-font-family: "Delius Swash Caps", Arial !important;
+font-family: 'Orbitron', sans-serif !important;
 }
 
 .alert-success {
 color: #000;
 background: #B5A5CD;
 border: 1px solid #000;
-font-family: "Delius Swash Caps", Arial !important;
+font-family: 'Orbitron', sans-serif !important;
 }
 
 .breadcrumb {
 background:  #FFD4E7;
 font-size: 13px;
 border: 1px dashed #000;
-font-family: "Delius Swash Caps", Arial !important;
+font-family: 'Orbitron', sans-serif !important;
 }
- 
+
 .breadcrumb>.active {
 color: #000;
-font-family: "Delius Swash Caps", Arial !important;
+font-family: 'Orbitron', sans-serif !important;
 }
- 
+
 h1 small, h2, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-font-family: "Carter One";
 color: #07294b;
-font-family: "Delius Swash Caps", Arial !important;
+font-family: 'Orbitron', sans-serif !important;
 }
- 
+
 .col-md-9 {
 background: none;
 border: 0px dashed #000;
-font-family: "Delius Swash Caps", Arial !important;
+font-family: 'Orbitron', sans-serif !important;
 }
- 
+
 /* TABLES */
- 
 #lion_image {
 clip-path: polygon(49% 0, 90% 10%, 100% 50%, 90% 90%, 50% 100%, 10% 90%, 0 50%, 10% 10%);
 overflow: hidden;
 border: 0px solid #000;
-font-family: "Delius Swash Caps", Arial !important;
+font-family: 'Orbitron', sans-serif !important;
 }
- 
+
 .table, .item {
 border: 1px dashed #000;
 background: #FFD4E7;
 border-collapse: separate;
-font-family: "Delius Swash Caps", Arial !important;
+font-family: 'Orbitron', sans-serif !important;
 }
 
 .table .right, .table .right_odd {
 background: none;
 border: 0px dashed #000;
-font-family: "Delius Swash Caps", Arial !important;
+font-family: 'Orbitron', sans-serif !important;
 }
 
 /* top and bottom of boxes */
@@ -286,7 +288,7 @@ div .feature, .cave-grid, div .left, .mound-grid,  .table .bottom,  .table .top,
 border: 0px dashed #000;
 background: #FFD4E7;
 color: #000;
-font-family: "Delius Swash Caps", Arial !important;
+font-family: 'Orbitron', sans-serif !important;
 }
 
 /* cave and mound boxes */
@@ -294,7 +296,7 @@ font-family: "Delius Swash Caps", Arial !important;
 border: 1px dashed #000;
 background: #FFD4E7;
 color: #000;
-font-family: "Delius Swash Caps", Arial !important;
+font-family: 'Orbitron', sans-serif !important;
 }
 
 /* left part inside box */
@@ -302,7 +304,7 @@ font-family: "Delius Swash Caps", Arial !important;
 border: 1px solid #000;
 background: #B5A5CD;
 color: #000;
-font-family: "Delius Swash Caps", Arial !important;
+font-family: 'Orbitron', sans-serif !important;
 }
 
 /* right part inside box */
@@ -310,33 +312,31 @@ font-family: "Delius Swash Caps", Arial !important;
 background: #FFEAED;
 border: 1px solid #000;
 border-left: none;
-font-family: "Delius Swash Caps", Arial !important;
+font-family: 'Orbitron', sans-serif !important;
 }
 
-/* Start http://www.cursors-4u.com */ body, a:hover {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur265.cur), progress !important;} /* End http://www.cursors-4u.com */
-
+/* cursor */
+body, a:hover {
+cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur265.cur), progress !important;
+}
 
 /* logo */
 body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
- content: url('https://i.imgur.com/xStmg5T.png')}
+ content: url('https://i.imgur.com/xStmg5T.png');
+}
 
 /* SCROLLBAR */
 ::-webkit-scrollbar {
 width: 10px;
 }
   
-/* part the scroll sits on*/
 ::-webkit-scrollbar-track {
 background-color: #FFD4E7;
 }
   
-/* The thingy that moves */
 ::-webkit-scrollbar-thumb {
 background-color:  #B5A5CD;
 border-radius: 0px;
 border: none;
 }
-
- 
- /* light_pink=#FFD4E7 pale_purple=#B5A5CD off_white=#FFEAED  */
- 
+</style>
