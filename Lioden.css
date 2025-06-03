@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 
 div.box1 {
-background:#FFD4E7;
+background:#3280ff;
 text-align:center;
 color:black;
 width:700px;
@@ -14,7 +14,7 @@ overflow:hidden;
 }
 
 .box1:hover {
-background:#FFD4E7;
+background:#3280ff;
 text-align:center;
 color:black;
 width:700px;
@@ -26,7 +26,7 @@ overflow:auto;
 }
 
 div.box2 {
-background:#FFD4E7;
+background:#3280ff;
 text-align:center;
 color:black;
 width:700px;
@@ -38,7 +38,7 @@ overflow:hidden;
 }
 
 .box2:hover {
-background:#FFD4E7;
+background:#3280ff;
 text-align:center;
 color:black;
 width:1000px;
@@ -50,7 +50,7 @@ overflow:auto;
 }
 
 div.box3 {
-background:#FFD4E7;
+background:#3280ff;
 text-align:center;
 color:black;
 width:700px;
@@ -62,7 +62,7 @@ overflow:hidden;
 }
 
 .box3:hover {
-background:#FFD4E7;
+background:#3280ff;
 text-align:center;
 color:black;
 width:700px;
@@ -74,7 +74,7 @@ overflow:auto;
 }
 
 div.boxfloat {
-background:#FFD4E7;
+background:#3280ff;
 color:black;
 border:1px dashed black;
 position:fixed;
@@ -109,7 +109,7 @@ border-bottom: 1px solid #000;
 
 /* BUTTONS */
 input[type="button"], input[type="submit"], input[type="submit"]:hover {
-background: #FFD4E7;
+background: #4d8cf4;
 color: #000;
 border: 1px #000;
 text-shadow: none;
