@@ -14,7 +14,7 @@ overflow:hidden;
 }
 
 .box1:hover {
-background:#3280ff;
+background:#92aabf;
 text-align:center;
 color:black;
 width:700px;
@@ -38,7 +38,7 @@ overflow:hidden;
 }
 
 .box2:hover {
-background:#3280ff;
+background:#92aabf;
 text-align:center;
 color:black;
 width:1000px;
@@ -74,7 +74,7 @@ overflow:auto;
 }
 
 div.boxfloat {
-background:#3280ff;
+background:#92aabf;
 color:black;
 border:1px dashed black;
 position:fixed;
