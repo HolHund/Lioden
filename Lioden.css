@@ -299,7 +299,7 @@ font-family: 'Orbitron', sans-serif !important;
 /* cave and mound boxes */
 .cave-grid, div .left, .mound-grid {
 border: 1px dashed #000;
-background: #10304e;
+background: #4f7fac;
 color: #000;
 font-family: 'Orbitron', sans-serif !important;
 }
@@ -307,14 +307,14 @@ font-family: 'Orbitron', sans-serif !important;
 /* left part inside box */
 .table .left {
 border: 1px solid #000;
-background: #10304e;
+background: #4f7fac;
 color: #000;
 font-family: 'Orbitron', sans-serif !important;
 }
 
 /* right part inside box */
 .inner-table .right {
-background: #10304e;
+background: #4f7fac;
 border: 1px solid #000;
 border-left: none;
 font-family: 'Orbitron', sans-serif !important;
