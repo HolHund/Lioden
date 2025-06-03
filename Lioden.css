@@ -133,7 +133,7 @@ font-family: 'Orbitron', sans-serif !important;
 
 /* TOPBAR */
 .topbar {
-background: #FFD4E7;
+background: #4d8cf4;
 border: 1px dashed #000;
 border-bottom-left-radius: 10px;
 border-bottom-right-radius: 10px;
@@ -141,7 +141,7 @@ font-family: 'Orbitron', sans-serif !important;
 }
 
 .badge {
-background: #FFD4E7;
+background: #4d8cf4;
 border: 1px solid #000;
 font-family: 'Orbitron', sans-serif !important;
 }
@@ -155,7 +155,7 @@ font-family: 'Orbitron', sans-serif !important;
 }
 
 .navbar {
-background: #FFD4E7;
+background: #4d8cf4;
 border-bottom: 1px dashed #000;
 color: #000;
 font-family: 'Orbitron', sans-serif !important;
@@ -173,7 +173,7 @@ justify-content: center;
 
 .navbar-default .navbar-nav li a:hover {
 color: #000;
-background: #B5A5CD;
+background: #10304e;
 border-left: 1px dashed #000;
 border-right: 1px dashed #000;
 font-family: 'Orbitron', sans-serif !important;
@@ -190,19 +190,19 @@ font-family: 'Orbitron', sans-serif !important;
 }
 
 .col-md-3 .panel {
-background: #FFD4E7;
+background: #10304e;
 border: 1px dashed #000;
 box-shadow: none;  
 font-family: 'Orbitron', sans-serif !important;
 }
 
 .progress-bar {
-background: #B5A5CD;
+background: #10304e;
 font-family: 'Orbitron', sans-serif !important;
 }
 
 .progress {
-background: #FFEAED;
+background: #10304e;
 border: 1px solid #000;
 font-family: 'Orbitron', sans-serif !important;
 }
@@ -214,7 +214,7 @@ color: #000;
 
 /* CHAT */
 .chat_light, .chat_dark {
-background: #FFD4E7;
+background: #10304e;
 font-size: 11px;
 color: #000;
 font-family: 'Orbitron', sans-serif !important;
@@ -232,20 +232,20 @@ font-family: 'Orbitron', sans-serif !important;
 
 .alert-danger {
 color: #000000;
-background: #B5A5CD;
+background: #10304e;
 border: 1px dashed #000;
 font-family: 'Orbitron', sans-serif !important;
 }
 
 .alert-success {
 color: #000;
-background: #B5A5CD;
+background: #10304e;
 border: 1px solid #000;
 font-family: 'Orbitron', sans-serif !important;
 }
 
 .breadcrumb {
-background:  #FFD4E7;
+background:  #10304e7;
 font-size: 13px;
 border: 1px dashed #000;
 font-family: 'Orbitron', sans-serif !important;
@@ -257,7 +257,7 @@ font-family: 'Orbitron', sans-serif !important;
 }
 
 h1 small, h2, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-color: #07294b;
+color: #10304e;
 font-family: 'Orbitron', sans-serif !important;
 }
 
@@ -277,7 +277,7 @@ font-family: 'Orbitron', sans-serif !important;
 
 .table, .item {
 border: 1px dashed #000;
-background: #FFD4E7;
+background: #10304e;
 border-collapse: separate;
 font-family: 'Orbitron', sans-serif !important;
 }
@@ -291,7 +291,7 @@ font-family: 'Orbitron', sans-serif !important;
 /* top and bottom of boxes */
 div .feature, .cave-grid, div .left, .mound-grid,  .table .bottom,  .table .top, .table th, .item-header, .item-footer {
 border: 0px dashed #000;
-background: #FFD4E7;
+background: #10304e;
 color: #000;
 font-family: 'Orbitron', sans-serif !important;
 }
@@ -299,7 +299,7 @@ font-family: 'Orbitron', sans-serif !important;
 /* cave and mound boxes */
 .cave-grid, div .left, .mound-grid {
 border: 1px dashed #000;
-background: #FFD4E7;
+background: #10304e;
 color: #000;
 font-family: 'Orbitron', sans-serif !important;
 }
@@ -307,14 +307,14 @@ font-family: 'Orbitron', sans-serif !important;
 /* left part inside box */
 .table .left {
 border: 1px solid #000;
-background: #B5A5CD;
+background: #10304e;
 color: #000;
 font-family: 'Orbitron', sans-serif !important;
 }
 
 /* right part inside box */
 .inner-table .right {
-background: #FFEAED;
+background: #10304e;
 border: 1px solid #000;
 border-left: none;
 font-family: 'Orbitron', sans-serif !important;
@@ -336,11 +336,11 @@ width: 10px;
 }
   
 ::-webkit-scrollbar-track {
-background-color: #FFD4E7;
+background-color: #10304e;
 }
   
 ::-webkit-scrollbar-thumb {
-background-color:  #B5A5CD;
+background-color:  #10304e;
 border-radius: 0px;
 border: none;
 }
