@@ -267,13 +267,63 @@ border: 0px dashed #000;
 font-family: 'Orbitron', sans-serif !important;
 }
 
-/* TABLES */
-#lion_image {
-clip-path: polygon(49% 0, 90% 10%, 100% 50%, 90% 90%, 50% 100%, 10% 90%, 0 50%, 10% 10%);
-overflow: hidden;
-border: 0px solid #000;
-font-family: 'Orbitron', sans-serif !important;
+.rgb-frame-wrapper {
+  position: relative;
+  display: inline-block;
+  width: fit-content;
 }
+
+#lion_image {
+  position: relative;
+  clip-path: polygon(49% 0, 90% 10%, 100% 50%, 90% 90%, 50% 100%, 10% 90%, 0 50%, 10% 10%);
+  overflow: hidden;
+  z-index: 1;
+  font-family: 'Orbitron', sans-serif !important;
+}
+
+/* Псевдоэлемент для RGB рамки */
+.rgb-frame-wrapper::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: conic-gradient(
+    from 0deg,
+    red,
+    orange,
+    yellow,
+    lime,
+    cyan,
+    blue,
+    violet,
+    red
+  );
+  z-index: 0;
+  clip-path: polygon(49% 0, 90% 10%, 100% 50%, 90% 90%, 50% 100%, 10% 90%, 0 50%, 10% 10%);
+  filter: blur(8px);
+  opacity: 0.6;
+  animation: rotate 6s linear infinite, breathe 3s ease-in-out infinite;
+  border-radius: 16px;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes breathe {
+  0%, 100% {
+    opacity: 0.3;
+    filter: blur(5px);
+  }
+  50% {
+    opacity: 0.8;
+    filter: blur(10px);
+  }
+}
+
 
 .table, .item {
 border: 1px dashed #000;
