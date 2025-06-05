@@ -1,5 +1,56 @@
-<style>
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+/* --- Animated RGB Octagon Border for Lion's Icon (Keep shape, add effect) --- */
+.rgb-frame-wrapper {
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+  z-index: 0;
+}
+
+#lion_image {
+  position: relative;
+  /* --- Keep your original octagon shape --- */
+  clip-path: polygon(50% 0, 90% 10%, 100% 50%, 90% 90%, 50% 100%, 10% 90%, 0 50%, 10% 10%);
+  overflow: hidden;
+  z-index: 1;
+  background: #000; /* fallback */
+  padding: 20px;
+}
+
+/* RGB animated, breathing, moving border for the octagon */
+.rgb-frame-wrapper::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  /* Animated conic blue-cyan gradient */
+  background: conic-gradient(
+    from 0deg,
+    #1e90ff,
+    #10fff8,
+    #1e90ff 99%
+  );
+  z-index: -1;
+  clip-path: polygon(50% 0, 90% 10%, 100% 50%, 90% 90%, 50% 100%, 10% 90%, 0 50%, 10% 10%);
+  filter: blur(8px);
+  opacity: 0.7;
+  animation: rgb-octagon-rotate 5.2s linear infinite, rgb-octagon-breathe 2.7s ease-in-out infinite;
+  border-radius: 16px;
+}
+
+@keyframes rgb-octagon-rotate {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+@keyframes rgb-octagon-breathe {
+  0%, 100% { box-shadow: 0 0 18px 8px #10fff8; opacity: 0.7; }
+  50% { box-shadow: 0 0 33px 18px #1e90ff; opacity: 1; }
+}
+
+/* --- rest of your custom CSS is preserved below --- */
 
 div.box1 {
 background:#3280ff;
@@ -87,7 +138,6 @@ height:100px;
 overflow:auto;
 }
 
-
 body {
 background: url("https://img.goodfon.com/original/3840x2160/5/81/cyberpunk-2077-night-city-cyberpunk-city-night-landscape-blu.jpg") fixed;
 background-repeat: no-repeat;
@@ -120,7 +170,7 @@ font-family: 'Orbitron', sans-serif !important;
 }
 
 /* LINKS */
-.table a:link, .table a:active, .table a:visited, .right a:link, .right a:active, .right a:visited, .bottom a:link, .bottom a:active, .bottom a:visited, .topbar a:link, .topbar a:visited, .topbar a:active, a:link, a:visited, a:active {
+.table a:link, .table a:active, .table a:visited, .right a:link, .right a:active, .right a:visited, .bottom a:link, .bottom a:active, .bottom a:visited, .topbar a:link, .topbar a:visited, .topbar a:active {
 color: #000000;
 font-family: 'Orbitron', sans-serif !important;
 }
@@ -162,7 +212,7 @@ font-family: 'Orbitron', sans-serif !important;
 }
 
 .navbar-default .navbar-nav > li > a {
-line-height: 50px; /* Регулируй под высоту розовой панели */
+line-height: 50px;
 height: 50px;
 padding-top: 0;
 padding-bottom: 0;
@@ -268,98 +318,6 @@ border: 0px dashed #000;
 font-family: 'Orbitron', sans-serif !important;
 }
 
-.rgb-frame-wrapper {
-  position: relative;
-  display: inline-block;
-  width: fit-content;
-  z-index: 0; /* добавлено */
-}
-
-#lion_image {
-  position: relative;
-  clip-path: polygon(50% 0, 90% 10%, 100% 50%, 90% 90%, 50% 100%, 10% 90%, 0 50%, 10% 10%);
-  overflow: hidden;
-  z-index: 1;
-  background: #000; /* на всякий случай, если контент отсутствует */
-  padding: 20px; /* если хочешь отступ от рамки */
-}
-
-.rgb-frame-wrapper::before {
-  content: '';
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  right: -10px;
-  bottom: -10px;
-  background: conic-gradient(
-    from 0deg,
-    red,
-    orange,
-    yellow,
-    lime,
-    cyan,
-    blue,
-    violet,
-    red
-  );
-  z-index: -1; /* <-- ВАЖНО: псевдоэлемент за lion_image */
-  clip-path: polygon(50% 0, 90% 10%, 100% 50%, 90% 90%, 50% 100%, 10% 90%, 0 50%, 10% 10%);
-  filter: blur(8px);
-  opacity: 0.6;
-  animation: rotate 6s linear infinite, breathe 3s ease-in-out infinite;
-  border-radius: 16px;
-}
-
-.table, .item {
-border: 1px dashed #000;
-background: #10304e;
-border-collapse: separate;
-font-family: 'Orbitron', sans-serif !important;
-}
-
-.table .right, .table .right_odd {
-background: none;
-border: 0px dashed #000;
-font-family: 'Orbitron', sans-serif !important;
-}
-
-/* top and bottom of boxes */
-div .feature, .cave-grid, div .left, .mound-grid,  .table .bottom,  .table .top, .table th, .item-header, .item-footer {
-border: 0px dashed #000;
-background: #10304e;
-color: #000;
-font-family: 'Orbitron', sans-serif !important;
-}
-
-/* cave and mound boxes */
-.cave-grid, div .left, .mound-grid {
-border: 1px dashed #000;
-background: #4f7fac;
-color: #000;
-font-family: 'Orbitron', sans-serif !important;
-}
-
-/* left part inside box */
-.table .left {
-border: 1px solid #000;
-background: #4f7fac;
-color: #000;
-font-family: 'Orbitron', sans-serif !important;
-}
-
-/* right part inside box */
-.inner-table .right {
-background: #4f7fac;
-border: 1px solid #000;
-border-left: none;
-font-family: 'Orbitron', sans-serif !important;
-}
-
-/* cursor */
-body, a:hover {
-cursor: url(https://cur.cursors-4u.net/cursors/cur-7/cur626.cur), progress !important;
-}
-
 /* logo */
 body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
  content: url('https://imgur.com/a/EHBMLFu');
@@ -369,14 +327,21 @@ body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img
 ::-webkit-scrollbar {
 width: 10px;
 }
-  
+
 ::-webkit-scrollbar-track {
 background-color: #10304e;
 }
-  
+
 ::-webkit-scrollbar-thumb {
 background-color:  #10304e;
 border-radius: 0px;
 border: none;
 }
-</style>
+
+/* Cursor */
+body, a:hover {
+cursor: url(https://cur.cursors-4u.net/cursors/cur-7/cur626.cur), progress !important;
+}
+
+/* ------ FONT INFO: Orbitron ------ */
+/* https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap */
