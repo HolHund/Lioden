@@ -277,7 +277,7 @@ font-family: 'Orbitron', sans-serif !important;
 
 #lion_image {
   position: relative;
-  clip-path: polygon(49% 0, 90% 10%, 100% 50%, 90% 90%, 50% 100%, 10% 90%, 0 50%, 10% 10%);
+  clip-path: polygon(50% 0, 90% 10%, 100% 50%, 90% 90%, 50% 100%, 10% 90%, 0 50%, 10% 10%);
   overflow: hidden;
   z-index: 1;
   background: #000; /* на всякий случай, если контент отсутствует */
@@ -303,7 +303,7 @@ font-family: 'Orbitron', sans-serif !important;
     red
   );
   z-index: -1; /* <-- ВАЖНО: псевдоэлемент за lion_image */
-  clip-path: polygon(49% 0, 90% 10%, 100% 50%, 90% 90%, 50% 100%, 10% 90%, 0 50%, 10% 10%);
+  clip-path: polygon(50% 0, 90% 10%, 100% 50%, 90% 90%, 50% 100%, 10% 90%, 0 50%, 10% 10%);
   filter: blur(8px);
   opacity: 0.6;
   animation: rotate 6s linear infinite, breathe 3s ease-in-out infinite;
@@ -362,7 +362,7 @@ cursor: url(https://cur.cursors-4u.net/cursors/cur-7/cur626.cur), progress !impo
 
 /* logo */
 body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
- content: url('https://i.imgur.com/xStmg5T.png');
+ content: url('https://imgur.com/a/EHBMLFu');
 }
 
 /* SCROLLBAR */
