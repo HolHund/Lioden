@@ -284,6 +284,32 @@ font-family: 'Orbitron', sans-serif !important;
   padding: 20px; /* если хочешь отступ от рамки */
 }
 
+.rgb-frame-wrapper {
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+  z-index: 0;
+}
+
+#lion_image {
+  position: relative;
+  clip-path: polygon(
+    50% 0%, 
+    90% 10%, 
+    100% 50%, 
+    90% 90%, 
+    50% 100%, 
+    10% 90%, 
+    0% 50%, 
+    10% 10%
+  );
+  overflow: hidden;
+  z-index: 1;
+  background: #000;
+  padding: 20px;
+}
+
+/* Цветная рамка за формой */
 .rgb-frame-wrapper::before {
   content: '';
   position: absolute;
@@ -302,12 +328,43 @@ font-family: 'Orbitron', sans-serif !important;
     violet,
     red
   );
-  z-index: 1; /* <-- ВАЖНО: псевдоэлемент за lion_image */
-  clip-path: polygon(50% 0, 90% 10%, 100% 50%, 90% 90%, 50% 100%, 10% 90%, 0 50%, 10% 10%);
+  z-index: 0;
+  clip-path: polygon(
+    50% 0%, 
+    90% 10%, 
+    100% 50%, 
+    90% 90%, 
+    50% 100%, 
+    10% 90%, 
+    0% 50%, 
+    10% 10%
+  );
   filter: blur(8px);
   opacity: 0.6;
   animation: rotate 6s linear infinite, breathe 3s ease-in-out infinite;
   border-radius: 16px;
+}
+
+/* Анимация вращения */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Эффект дыхания */
+@keyframes breathe {
+  0%, 100% {
+    filter: blur(8px);
+    opacity: 0.6;
+  }
+  50% {
+    filter: blur(12px);
+    opacity: 1;
+  }
 }
 
 .table, .item {
