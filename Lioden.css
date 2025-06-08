@@ -121,6 +121,7 @@ font-family: 'Orbitron', sans-serif !important;
 
 /* LINKS */
 .table a:link, .table a:active, .table a:visited, .right a:link, .right a:active, .right a:visited, .bottom a:link, .bottom a:active, .bottom a:visited, .topbar a:link, .topbar a:visited, .topbar a:active, a:link, a:visited, a:active {
+border: 10px outset rgba(56,124,46)  
 color: #000000;
 font-family: 'Orbitron', sans-serif !important;
 }
