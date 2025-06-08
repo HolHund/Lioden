@@ -375,10 +375,16 @@ font-family: 'Orbitron', sans-serif !important;
 
 /* cave and mound boxes */
 .cave-grid, div .left, .mound-grid {
-border: 1px dashed #000;
-background: url("https://www.icegif.com/wp-content/uploads/2023/05/icegif-11.gif");
-color: #000;
-font-family: 'Orbitron', sans-serif !important;
+  border: 1px dashed #000;
+  background-image: url("https://www.icegif.com/wp-content/uploads/2023/05/icegif-11.gif");
+  background-size: cover;          /* чтобы гифка растягивалась по блоку */
+  background-position: center;     /* центрируем */
+  background-repeat: no-repeat;    /* отключаем повтор */
+  color: #000;
+  font-family: 'Orbitron', sans-serif !important;
+  text-align: center;
+  height: 150px; /* или нужная тебе высота */
+  width: 200px;  /* или нужная тебе ширина */
 }
 
 /* left part inside box */
