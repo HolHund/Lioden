@@ -126,7 +126,7 @@ font-family: 'Orbitron', sans-serif !important;
 }
 
 .table .top a:link, .table .top a:active, .table .top a:visited, .table th a:link, .table th a:active, .table th a:visited {
-border-bottom: 10px inset rgba(30, 144, 255);
+border-bottom: 10px outset rgba(30, 144, 255);
 color: #000000;
 font-family: 'Orbitron', sans-serif !important;
 }
@@ -142,7 +142,7 @@ font-family: 'Orbitron', sans-serif !important;
 
 .badge {
 background: #92aabf;
-border: 10px inset rgba(30, 144, 255);
+border: 10px outset rgba(30, 144, 255);
 font-family: 'Orbitron', sans-serif !important;
 }
 
