@@ -234,21 +234,21 @@ font-family: 'Orbitron', sans-serif !important;
 .alert-danger {
 color: #000000;
 background: #92aabf;
-border: 1px dashed #000;
+border: 10px inset rgba(30, 144, 255);
 font-family: 'Orbitron', sans-serif !important;
 }
 
 .alert-success {
 color: #000;
 background: #92aabf;
-border: 1px solid #000;
+border: 10px inset rgba(30, 144, 255);
 font-family: 'Orbitron', sans-serif !important;
 }
 
 .breadcrumb {
 background:  #92aabf;
 font-size: 13px;
-border: 1px dashed #000;
+border: 10px inset rgba(30, 144, 255);
 font-family: 'Orbitron', sans-serif !important;
 }
 
@@ -264,7 +264,7 @@ font-family: 'Orbitron', sans-serif !important;
 
 .col-md-9 {
 background: none;
-border: 0px dashed #000;
+border: 10px inset rgba(30, 144, 255);
 font-family: 'Orbitron', sans-serif !important;
 }
 
@@ -353,7 +353,7 @@ font-family: 'Orbitron', sans-serif !important;
 }
 
 .table, .item {
-border: 1px dashed #000;
+border: 10px inset rgba(30, 144, 255);
 background: #10304e;
 border-collapse: separate;
 font-family: 'Orbitron', sans-serif !important;
