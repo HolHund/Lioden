@@ -375,16 +375,11 @@ font-family: 'Orbitron', sans-serif !important;
 
 /* cave and mound boxes */
 .cave-grid, div .left, .mound-grid {
-  border: 1px dashed #000;
-  background-image: url("https://www.icegif.com/wp-content/uploads/2023/05/icegif-11.gif");
-  background-size: cover;          /* чтобы гифка растягивалась по блоку */
-  background-position: center;     /* центрируем */
-  background-repeat: no-repeat;    /* отключаем повтор */
-  color: #000;
-  font-family: 'Orbitron', sans-serif !important;
-  text-align: center;
-  height: 150px; /* или нужная тебе высота */
-  width: 200px;  /* или нужная тебе ширина */
+border: 1px dashed #000;
+background: #8fc3f5;
+color: #000;
+font-family: 'Orbitron', sans-serif !important;
+
 }
 
 /* left part inside box */
@@ -410,7 +405,7 @@ cursor: url(https://cur.cursors-4u.net/cursors/cur-7/cur626.cur), progress !impo
 
 /* logo */
 body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
- content: url('https://imgur.com/a/EHBMLFu');
+ content: url('https://www.icegif.com/wp-content/uploads/2023/05/icegif-11.gif');
 }
 
 /* SCROLLBAR */
