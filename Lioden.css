@@ -104,14 +104,14 @@ h1, h3 , .sidebar h3 {
 font-family: 'Orbitron', sans-serif !important;
 text-align: left;
 color: #000;
-border-bottom: 1px solid #000;
+border-bottom: 10px inset rgba(51,153,0,0.65);
 }
 
 /* BUTTONS */
 input[type="button"], input[type="submit"], input[type="submit"]:hover {
 background: #674ea7;
 color: #000;
-border: 1px #000;
+border: 10px inset rgba(51,153,0,0.65);
 text-shadow: none;
 font-weight: bold;
 font-size: 14px;
@@ -126,7 +126,7 @@ font-family: 'Orbitron', sans-serif !important;
 }
 
 .table .top a:link, .table .top a:active, .table .top a:visited, .table th a:link, .table th a:active, .table th a:visited {
-border-bottom: 1px solid #000000;
+border-bottom: 10px inset rgba(51,153,0,0.65);
 color: #000000;
 font-family: 'Orbitron', sans-serif !important;
 }
@@ -134,7 +134,7 @@ font-family: 'Orbitron', sans-serif !important;
 /* TOPBAR */
 .topbar {
 background: #4d8cf4;
-border: 1px dashed #000;
+border: 10px inset rgba(51,153,0,0.65);
 border-bottom-left-radius: 10px;
 border-bottom-right-radius: 10px;
 font-family: 'Orbitron', sans-serif !important;
@@ -142,21 +142,21 @@ font-family: 'Orbitron', sans-serif !important;
 
 .badge {
 background: #92aabf;
-border: 1px solid #000;
+border: 10px inset rgba(51,153,0,0.65);
 font-family: 'Orbitron', sans-serif !important;
 }
 
 /* NAVBAR */
 .main {
 background: rgba(255, 212, 231, 0.21);
-border: 1px dashed #000;
+border: 10px inset rgba(51,153,0,0.65);
 box-shadow: none;
 font-family: 'Orbitron', sans-serif !important;
 }
 
 .navbar {
 background: #4d8cf4;
-border-bottom: 1px dashed #000;
+border-bottom: 10px inset rgba(51,153,0,0.65);
 color: #000;
 font-family: 'Orbitron', sans-serif !important;
 }
@@ -361,13 +361,13 @@ font-family: 'Orbitron', sans-serif !important;
 
 .table .right, .table .right_odd {
 background: none;
-border: 0px dashed #000;
+border: 10px inset rgba(51,153,0,0.65);
 font-family: 'Orbitron', sans-serif !important;
 }
 
 /* top and bottom of boxes */
 div .feature, .cave-grid, div .left, .mound-grid,  .table .bottom,  .table .top, .table th, .item-header, .item-footer {
-border: 0px dashed #000;
+border: 10px inset rgba(51,153,0,0.65);
 background: #10304e;
 color: #000;
 font-family: 'Orbitron', sans-serif !important;
@@ -375,7 +375,7 @@ font-family: 'Orbitron', sans-serif !important;
 
 /* cave and mound boxes */
 .cave-grid, div .left, .mound-grid {
-border: 1px dashed #000;
+border: 10px inset rgba(51,153,0,0.65);
 background: #8fc3f5;
 color: #000;
 font-family: 'Orbitron', sans-serif !important;
@@ -384,7 +384,7 @@ font-family: 'Orbitron', sans-serif !important;
 
 /* left part inside box */
 .table .left {
-border: 1px solid #000;
+border: 10px inset rgba(51,153,0,0.65);
 background: #4f7fac;
 color: #000;
 font-family: 'Orbitron', sans-serif !important;
@@ -393,7 +393,7 @@ font-family: 'Orbitron', sans-serif !important;
 /* right part inside box */
 .inner-table .right {
 background: #4f7fac;
-border: 1px solid #000;
+border: 10px inset rgba(51,153,0,0.65);
 border-left: none;
 font-family: 'Orbitron', sans-serif !important;
 }
