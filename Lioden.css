@@ -405,7 +405,7 @@ cursor: url(https://cur.cursors-4u.net/cursors/cur-7/cur626.cur), progress !impo
 
 /* logo */
 body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
- content: url('https://www.icegif.com/wp-content/uploads/2023/05/icegif-11.gif');
+ content: ;
 }
 
 /* SCROLLBAR */
