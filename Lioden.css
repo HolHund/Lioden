@@ -7,7 +7,7 @@ text-align:center;
 color:#ff0000;
 width:700px;
 height:60px;
-border: 10px inset rgb(203 148 148);
+border: 10px inset rgb(255 0 0);
 transition:all ease 2s;
 border-radius:5px;
 overflow:hidden;
@@ -16,7 +16,7 @@ overflow:hidden;
 .box1:hover {
 background:#697177;
 text-align:center;
-color:#dddddd;
+color:#ff0000;
 width:700px;
 height:255px;
 border:10px inset rgb(30 144 255);;
@@ -28,7 +28,7 @@ overflow:auto;
 div.box2 {
 background:#4e6790;
 text-align:center;
-color:black;
+color:#ff0000;
 width:700px;
 height:60px;
 border:10px inset rgba(30, 144, 255);
@@ -40,7 +40,7 @@ overflow:hidden;
 .box2:hover {
 background:#556c80;
 text-align:center;
-color:black;
+color:#ff0000;
 width:1000px;
 height:700px;
 border:10px inset rgb(48 70 92);
@@ -52,10 +52,10 @@ overflow:auto;
 div.box3 {
 background:#4800ff;
 text-align:center;
-color:black;
+color:#ff0000;
 width:700px;
 height:60px;
-border:10px inset rgb(10 13 16);
+border:10px inset rgb(0 127 255);
 transition:all ease 2s;
 border-radius:5px;
 overflow:hidden;
@@ -64,7 +64,7 @@ overflow:hidden;
 .box3:hover {
 background:#0061ff;
 text-align:center;
-color:black;
+color:#ff0000;
 width:700px;
 height:400px;
 border:10px inset rgb(0 129 255);
@@ -92,12 +92,12 @@ body {
 background: url("https://i.postimg.cc/tJz40HxW/HD-wallpaper-blackparis-animal-black-snake-(2).jpg") fixed;
 background-repeat: no-repeat;
 background-size: cover;
-color: #000000;
+color: rgb(151 235 255);
 font-family: 'Orbitron', sans-serif;
 }
 
 .welcomeback, .white, .bottomlinks li a:hover, .bottomlinks li a {
-color: #5b5b5b;
+color: rgb(151 235 255);
 }
 
 h1, h3 , .sidebar h3 {
@@ -124,6 +124,11 @@ font-family: 'Orbitron', sans-serif !important;
 .table a:link, .table a:active, .table a:visited, .right a:link, .right a:active, .right a:visited, .bottom a:link, .bottom a:active, .bottom a:visited, .topbar a:link, .topbar a:visited, .topbar a:active, a:link, a:visited, a:active {
 border: 10px outset rgb(33 255 0)  
 color: #25ff00;
+ color: rgb(255 255 255); /dlya texta vozle lva/
+  a:link, a:visited {
+  color: rgb(255 255 255)}
+  body, a:hover {
+  color: rgb(255 255 255);}   
 font-family: 'Orbitron', sans-serif !important;
 }
 
@@ -133,6 +138,11 @@ font-family: 'Orbitron', sans-serif !important;
 border-bottom: 5px solid rgb(30 37 46);
 color: #4696ea;
 font-family: 'Orbitron', sans-serif !important;
+     color: rgb(151 235 255); 
+  a:link, a:visited {
+  color: rgb(255 255 255)}
+  body, a:hover {
+  color: rgb(151 235 255);}  
 }
 
 /* TOPBAR */
@@ -142,6 +152,11 @@ border: 7px double rgb(129 129 129);
 border-bottom-left-radius: 100px;
 border-bottom-right-radius: 100px;
 font-family: 'Orbitron', sans-serif !important;
+  color: rgb(151 235 255); 
+  a:link, a:visited {
+  color: rgb(255 255 255)}
+  body, a:hover {
+  color: rgb(151 235 255);} 
 }
 
 .badge {
@@ -161,8 +176,6 @@ font-family: 'Orbitron', sans-serif !important;
 
 .navbar {
 background: #ffffff00;
-border-bottom: 5px dotted rgb(51 13 13 / 0%);
-color: #9a9a9a;
 border-radius: 50px;
 font-family: 'Orbitron', sans-serif !important;
 }
@@ -175,23 +188,27 @@ padding-bottom: 50;
 display: flex;
 align-items: center;
 justify-content: center;
+    color: rgb(129 129 129);
 }
 
 .navbar-default .navbar-nav li a:hover {
 color: #272829c7;
-background: #c8d5e1;
-border-left: 1px dashed #ff0000;
-border-right: 1px dashed #ff0000;
+background: #272829c7;
+border: 5px double #8494a5;
+border-radius: 50px;
+    color: rgb(151 235 255);
 font-family: 'Orbitron', sans-serif !important;
 }
 
 /* SIDEBAR */
 .sidebar {
-background:#ebebeb00;
-border: px dashed #ffffff;
-border-left: 7px double #ff000000;
-color: #ffffff00;
+background:#ffffff00;
 font-family: 'Orbitron', sans-serif !important;
+color: rgb(255 255 255); /*dlya texta vozle lva*/
+  a:link, a:visited, a:unvisited {
+  color: rgb(255 255 255)}
+  body, a:hover {
+  color: rgb(151 235 255);}
 }
 
 .col-md-3 .panel {
@@ -199,10 +216,15 @@ background: #272829c7;
 opacity: 0,3;
 border: 10px doubled #8494a5;
 font-family: 'Orbitron', sans-serif !important;
+color: rgb(151 235 255); /*dlya texta vozle lva*/
+  a:link, a:visited {
+  color: rgb(255 255 255)}
+  body, a:hover {
+  color: rgb(151 235 255);}
 }
 
 .progress-bar {
-background: #8494a5;
+background: #8494a58a;
 font-family: 'Orbitron', sans-serif !important;
 }
 
@@ -214,21 +236,40 @@ font-family: 'Orbitron', sans-serif !important;
 
 /* text on progress bars */
 .progress div {
-color: rgb(129 129 129);
+color: rgb(151 235 255);
 }
 
 /* CHAT */
-.chat_light, .chat_dark {
-background: #54ff00;
-font-size: 10px;
-color: #47ff00;
-font-family: 'Orbitron', sans-serif !important;
+.s-chat-message:nth-child(even) /* Even Numbered Messages */ {
+background: rgb(155 155 155 / 12%) !important;
+color: #a9d3ff !important;
+border: none !important
 }
 
-.chatContainer {
-background: #19ff00;
-border: 1px dashed #2eff00;
-font-family: 'Orbitron', sans-serif !important;
+.s-chat-message:nth-child(odd) /* Odd Numbered Messages */ {
+background: rgba(0,0,0,0) !important;
+color: #8494a5 !important;
+border: none !important
+}
+
+.s-chat-message__pinned /* Pinned Message */ {
+background: rgba(0,0,0,0) !important;
+color: #000000 !important;
+border: none !important
+}
+
+.s-chat-message_timestamp /* Timestamps */ {
+color: #67d4e0 !important;
+}
+
+div#chatMessageContainer {
+border: none !important;
+}
+
+button#label_currentChannel /* Channel Button ie. Main, Sales */ {
+background: rgb(0 0 0 / 30%) !important;
+color: #8494a5  !important;
+border: double !important;
 }
 
 .userstolen {
@@ -237,28 +278,28 @@ font-family: 'Orbitron', sans-serif !important;
 }
 
 .alert-danger {
-color: #3b3b3b;
-background: #7c97b0;
-border: 10px inset rgb(13 0 0);
+color: rgb(151 235 255);
+background: #7c97b070;
+border: 10px inset rgb(13 0 0 / 53%);
 font-family: 'Orbitron', sans-serif !important;
 }
 
 .alert-success {
-color: #6b4949;
+color: rgb(151 235 255);
 background: #546f874d;
 border: 5px double rgb(144 144 144);
 font-family: 'Orbitron', sans-serif !important;
 }
 
 .breadcrumb {
-background:  #00118030;
+background:  #00118029;
 font-size: 13px;
 border: 10px double rgb(125 138 152);
 font-family: 'Orbitron', sans-serif !important;
 }
 
 .breadcrumb>.active {
-color: #ffffff;
+color: rgb(151 235 255);
 font-family: 'Orbitron', sans-serif !important;
 }
 
@@ -271,29 +312,6 @@ font-family: 'Orbitron', sans-serif !important;
 background: none;
 border: 10px inset rgb(255 255 255 / 0%);
 font-family: 'Orbitron', sans-serif !important;
-}
-
-.rgb-frame-wrapper {
-  position: relative;
-  display: inline-block;
-  width: fit-content;
-  z-index: 0;
-}
-
-/* keep the polygon shape for the image itself */
-#lion_image {
-  position: relative;
-  clip-path: polygon(50% 0, 90% 10%, 100% 50%, 90% 90%, 50% 100%, 10% 90%, 0 50%, 10% 10%);
-  overflow: hidden;
-  z-index: 1;
-  background: url('https://i.postimg.cc/HsXk1XQs/1000062056-Photoroom.png') /* fallback */
-  padding: 5px;
-}
-
-@keyframes rgbborder {
-  0% { background-position: 0% 50%;}
-  50% { background-position: 100% 50%;}
-  100% { background-position: 0% 50%;}
 }
 
 .table, .item {
@@ -315,7 +333,7 @@ div .feature, .cave-grid, div .left, .mound-grid,  .table .bottom,  .table .top,
 border: 10px double #007fff00;
 border-radius: 100px;
 background: #ffffff00;
-color: rgb(129 129 129);
+color: rgb(255 255 255);
 font-family: 'Orbitron', sans-serif !important;
 }
 
@@ -339,9 +357,15 @@ font-family: 'Orbitron', sans-serif !important;
 
 /* right part inside box */
 .inner-table .right {
-background: #4e545957;
+background: #4e545940;
 border: 5px double rgb(129 129 129);
 border-left: none;
+    color: rgb(151 235 255); /dlya texta vozle lva/
+  a:link, a:visited {
+  color: rgb(0 225 255)}
+  body, a:hover {
+  color: rgb(151 235 255)}
+
 font-family: 'Orbitron', sans-serif !important;
 }
 
@@ -352,7 +376,9 @@ cursor: url(https://cur.cursors-4u.net/cursors/cur-7/cur626.cur), progress !impo
 
 /* logo */
 body > div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
- content: url("");
+ content: url("https://i.postimg.cc/zGBzscvw/beautiful-coiled-black-snake-illustration-with-watercolor-style-splash-accents-on-a-transparent-back.png");
+height:170px;
+width:170px;
 }
 
 /* SCROLLBAR */
@@ -365,8 +391,30 @@ background-color: #272829c7;
 }
   
 ::-webkit-scrollbar-thumb {
-background-color:  #8494a5;
+background-color:  #b6b6b6;
 border-radius: 20px;
-border: none;
+border: double 3px;
+    color: #606060;
 }
+
+
+
+#lion_image {
+    position: relative;
+    display: inline-block;
+  clip-path: circle(100px)
+  
+}
+
+#lion_image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+
+    background: url("https://i.postimg.cc/XNTt6hPq/vector-illustration-eps-symbol-ouroboros-snake-101944220-removebg-preview.png") no-repeat center;
+    background-size: 135% 135%;
+    pointer-events: none;
+}
+
 </style>
